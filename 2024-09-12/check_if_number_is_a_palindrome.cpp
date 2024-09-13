@@ -9,7 +9,7 @@ int main() {
 
     if (number < 0) {
         std::cout << "Number " << number << " is not a palindrome.\n";
-	return 0;
+        return 0;
     }
 
     // Find the reversed version of the initial number
