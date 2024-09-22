@@ -12,8 +12,9 @@ int main() {
     for(int i = 1; i * i <= number; ++i) {
         if(number % i == 0) {
             divisors.push_back(i);
-            if(i != number / i)
+            if(i != number / i) {
                 divisors.push_back(number / i);
+            }
         }
     }
 
@@ -26,4 +27,3 @@ int main() {
 
     return 0;
 }
-

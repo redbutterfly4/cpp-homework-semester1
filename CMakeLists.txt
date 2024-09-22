@@ -5,4 +5,3 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_subdirectory("lab2")
 add_subdirectory("seminar3")
-
