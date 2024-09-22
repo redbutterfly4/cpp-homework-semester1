@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int main()
+{
     std::cout << "Enter a number: ";
     int number;
     std::cin >> number;

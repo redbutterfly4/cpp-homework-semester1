@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
 
-int main() {
+int main()
+{
     std::cout << "Enter a number: ";
     size_t number;
     std::cin >> number;
@@ -15,10 +16,11 @@ int main() {
 
     if (fibonacciNumbers.size() == number) {
         std::cout << "Successfully found " << fibonacciNumbers.size() << " Fibonacci numbers: ";
-    } else {
+    }
+    else {
         std::cout << "Found only " << fibonacciNumbers.size() << " Fibonacci numbers: ";
     }
-    for (uint64_t fibonacciNumber : fibonacciNumbers) {
+    for (uint64_t fibonacciNumber: fibonacciNumbers) {
         std::cout << fibonacciNumber << ' ';
     }
     std::cout << std::endl;

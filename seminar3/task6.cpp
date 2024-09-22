@@ -2,7 +2,8 @@
 #include <vector>
 #include <algorithm>
 
-int main() {
+int main()
+{
     uint64_t number;
     std::cout << "Enter a number: ";
     std::cin >> number;
@@ -15,7 +16,8 @@ int main() {
         char digitChar;
         if (digit < 10) {
             digitChar = '0' + digit;
-        } else {
+        }
+        else {
             digitChar = 'a' + (digit - 10);
         }
         result.push_back(digitChar);

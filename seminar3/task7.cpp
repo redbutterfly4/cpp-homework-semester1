@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
 
-int main() {
+int main()
+{
     uint64_t inputNumber;
     std::cout << "Enter a number: ";
     std::cin >> inputNumber;
@@ -21,7 +22,8 @@ int main() {
             number += reversedNumber;
             tmp = number;
             reversedNumber = 0;
-        } else {
+        }
+        else {
             break;
         }
     }

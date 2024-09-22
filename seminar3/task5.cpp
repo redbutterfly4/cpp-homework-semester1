@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
 
-int main() {
+int main()
+{
     long long number;
     std::cout << "Enter a number: ";
     std::cin >> number;
@@ -23,7 +24,7 @@ int main() {
     }
 
     std::cout << "Prime factors: ";
-    for (long long factor : factors) {
+    for (long long factor: factors) {
         std::cout << factor << ' ';
     }
     std::cout << std::endl;
