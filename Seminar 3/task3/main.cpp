@@ -1,12 +1,10 @@
 #include <iostream>
 #include <vector>
 
-
 int main() {
     int number;
     std::cout << "Enter a number: ";
     std::cin >> number;
-
 
     // Find all divisors and push back them into a vector.
     std::vector<int> divisors;
@@ -18,14 +16,12 @@ int main() {
         }
     }
 
-
     std::sort(divisors.begin(), divisors.end());
     std::cout << "Divisors of " << number << " are: ";
     for(int divisor : divisors) {
         std::cout << divisor << ' ';
     }
     std::cout << std::endl;
-
 
     return 0;
 }

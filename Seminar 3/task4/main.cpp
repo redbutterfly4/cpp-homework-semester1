@@ -1,12 +1,10 @@
 #include <iostream>
 #include <vector>
 
-
 int main() {
     int numberOfPrimes;
     std::cout << "Enter a number: ";
     std::cin >> numberOfPrimes;
-
 
     int upperLimitForSieve;
     if (numberOfPrimes < 1229) {
@@ -23,7 +21,6 @@ int main() {
         upperLimitForSieve = 1e9;
     }
 
-
     // Run sieve of Eratosthenes up to "upper_limit_for_sieve"
     std::vector<bool> isPrime(upperLimitForSieve + 1, true);
     isPrime[0] = false;
@@ -38,7 +35,6 @@ int main() {
         }
     }
 
-
     // Push back the first N numbers for which isPrime[i] is true
     std::vector<int> primes;
     for (int i = 2; i <= upperLimitForSieve && primes.size() < numberOfPrimes; ++i) {
@@ -46,7 +42,6 @@ int main() {
             primes.push_back(i);
         }
     }
-
 
     // If needed, check additional numbers for being prime and add them to the vector.
     int lastCheckedNumber = primes.back();
@@ -64,13 +59,11 @@ int main() {
         }
     }
 
-
     std::cout << "First " << primes.size() << " prime numbers are: ";
     for (int primeNumber : primes) {
         std::cout << primeNumber << ' ';
     }
     std::cout << std::endl;
-
 
     return 0;
 }

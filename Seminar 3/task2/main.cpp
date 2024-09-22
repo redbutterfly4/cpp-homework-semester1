@@ -1,11 +1,9 @@
 #include <iostream>
 
-
 int main() {
     std::cout << "Enter a number: ";
     int number;
     std::cin >> number;
-
 
     int tmp = number;
     int bitCount = 0;
@@ -14,7 +12,6 @@ int main() {
         tmp >>= 1;
     }
     std::cout << "Number of bits equal to 1: " << bitCount << std::endl;
-
 
     return 0;
 }

@@ -1,12 +1,10 @@
 #include <iostream>
 #include <vector>
 
-
 int main() {
     long long number;
     std::cout << "Enter a number: ";
     std::cin >> number;
-
 
     long long tmp = number;
     std::vector<long long> factors;
@@ -24,13 +22,11 @@ int main() {
         factors.push_back(tmp);
     }
 
-
     std::cout << "Prime factors: ";
     for (long long factor : factors) {
         std::cout << factor << ' ';
     }
     std::cout << std::endl;
-
 
     return 0;
 }

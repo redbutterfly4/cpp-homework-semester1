@@ -1,13 +1,11 @@
 #include <iostream>
 #include <vector>
 
-
 int main() {
     uint64_t inputNumber;
     std::cout << "Enter a number: ";
     std::cin >> inputNumber;
 
-    
     int levelOfPalindromicity = 0;
     uint64_t number = inputNumber;
     uint64_t tmp = number;
@@ -27,7 +25,6 @@ int main() {
             break;
         }
     }
-
 
     std::cout << "Level of Palindromicity: " << levelOfPalindromicity << std::endl;
     std::cout << "Number: " << number << std::endl;

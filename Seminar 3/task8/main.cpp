@@ -1,12 +1,10 @@
 #include <iostream>
 #include <vector>
 
-
 int main() {
     std::cout << "Enter a number: ";
     size_t number;
     std::cin >> number;
-
 
     std::vector<uint64_t> fibonacciNumbers(number);
     fibonacciNumbers[0] = 0;
@@ -14,7 +12,6 @@ int main() {
     for (size_t i = 2; i < number; ++i) {
         fibonacciNumbers[i] = fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2];
     }
-
 
     if (fibonacciNumbers.size() == number) {
         std::cout << "Successfully found " << fibonacciNumbers.size() << " Fibonacci numbers: ";

@@ -1,12 +1,10 @@
 #include <iostream>
 #include <vector>
 
-
 int main() {
     uint64_t number;
     std::cout << "Enter a number: ";
     std::cin >> number;
-
 
     constexpr int HEX_BASE = 16;
     std::string result;
@@ -23,7 +21,6 @@ int main() {
         tmp /= HEX_BASE;
     }
     std::reverse(result.begin(), result.end());
-
 
     std::cout << "Result is " << result << std::endl;
     std::cout << "Result using std::hex is " << std::hex << number << std::endl;
