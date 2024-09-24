@@ -37,16 +37,16 @@ int main()
         std::cin >> r1;
     }
 
-    long minX = std::lround(std::min(x0, x1) - r0) - 1;
-    long minY = std::lround(std::min(y0, y1) - r0) - 1;
-    long maxX = std::lround(std::max(x0, x1) + r0) + 1;
-    long maxY = std::lround(std::max(y0, y1) + r0) + 1;
+    long minX = std::lround(std::min(x0 - r0, x1 - r1)) - 1;
+    long minY = std::lround(std::min(y0 - r0, y1 - r1)) - 1;
+    long maxX = std::lround(std::max(x0 + r0, x1 + r1)) + 1;
+    long maxY = std::lround(std::max(y0 + r0, y1 + r1)) + 1;
 
     std::vector<std::pair<int, int>> intersectionPoints;
     for (long x = minX; x <= maxX; ++x) {
         for (long y = minY; y <= maxY; ++y) {
             bool isInsideCircle0 = hypot(x - x0, y - y0) <= r0;
-            bool isInsideCircle1 = hypot(x - x1, y - y1) <= r0;
+            bool isInsideCircle1 = hypot(x - x1, y - y1) <= r1;
             if (isInsideCircle0 && isInsideCircle1) {
                 intersectionPoints.emplace_back(x, y);
             }
