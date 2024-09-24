@@ -19,7 +19,7 @@ int main()
     std::cout << "Enter b2: ";
     std::cin >> b2;
 
-    constexpr double PI = M_PI;
+    constexpr double PI = 3.14159265358979323846;
     constexpr double EPSILON = 1e-9;
     double angle;
     if (fabs(a1 - a2) < EPSILON) { // a1 is equal to a2
