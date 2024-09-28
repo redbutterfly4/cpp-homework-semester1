@@ -4,6 +4,6 @@ project(oimp_homework)
 set(CMAKE_CXX_STANDARD 17)
 
 add_subdirectory("lab01")
-add_subdirectory("lab2")
+add_subdirectory("lab02")
 add_subdirectory("seminar01")
-add_subdirectory("seminar3")
+add_subdirectory("seminar03")

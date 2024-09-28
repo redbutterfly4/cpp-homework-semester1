@@ -1,8 +1,0 @@
-add_executable(seminar3_task1 task1.cpp)
-add_executable(seminar3_task2 task2.cpp)
-add_executable(seminar3_task3 task3.cpp)
-add_executable(seminar3_task4 task4.cpp)
-add_executable(seminar3_task5 task5.cpp)
-add_executable(seminar3_task6 task6.cpp)
-add_executable(seminar3_task7 task7.cpp)
-add_executable(seminar3_task8 task8.cpp)
