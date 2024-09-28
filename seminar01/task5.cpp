@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int main()
+{
     std::cout << "Enter the temperature in Celsius: ";
     double celsiusTemperature;
     std::cin >> celsiusTemperature;
