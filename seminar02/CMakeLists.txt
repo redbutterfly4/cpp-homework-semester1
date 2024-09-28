@@ -1,0 +1,8 @@
+add_executable(seminar02_task1.1 task1.1.cpp)
+add_executable(seminar02_task1.4 task1.4.cpp)
+add_executable(seminar02_task2.1 task2.1.cpp)
+add_executable(seminar02_task2.6 task2.6.cpp)
+add_executable(seminar02_task2.13 task2.13.cpp)
+add_executable(seminar02_task3.13.1 task3.13.1.cpp)
+add_executable(seminar02_task3.13.2 task3.13.2.cpp)
+add_executable(seminar02_task3.13.3 task3.13.3.cpp)
