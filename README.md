@@ -1,3 +1,5 @@
-Репозиторий для моих решений домашних заданий по "Основам и методологиям программирования" в 1 семестре.
+# Programming Fundamentals and Methodologies - Semester 1
 
-A repository for my solutions to my homework assignments for “Programming Fundamentals and Methodologies” in semester 1.
+This repository contains my solutions to the homework assignments for the course "Programming Fundamentals and
+Methodologies" in Semester 1.
+The code follows the Qt coding style guidelines.
