@@ -11,7 +11,7 @@ int main()
 
 void outputSequence()
 {
-    constexpr std::size_t TOTAL_NUMBERS = 10000;
+    constexpr std::size_t TOTAL_NUMBERS = 1000;
     std::bitset<TOTAL_NUMBERS + 1> lastBitset(1);
     std::cout << "1\n"; // Print the initial number
     for (int i = 0; i < TOTAL_NUMBERS; ++i) {

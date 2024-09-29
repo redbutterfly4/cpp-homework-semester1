@@ -54,7 +54,7 @@ int main()
     }
 
     std::cout << "There are " << intersectionPoints.size() << " points of intersection: " << std::endl;
-    for (const auto &intersectionPoint: intersectionPoints) {
+    for (auto intersectionPoint: intersectionPoints) {
         std::cout << intersectionPoint.first << ' ' << intersectionPoint.second << std::endl;
     }
 

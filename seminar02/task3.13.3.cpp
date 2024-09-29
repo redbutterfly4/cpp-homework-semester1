@@ -12,7 +12,7 @@ int main()
     double y;
     std::cin >> y;
 
-    if (y == 0) {
+    if (y == .0) {
         std::cout << "y cannot be equal to zero because it is in the denominator\n";
         return 1;
     }

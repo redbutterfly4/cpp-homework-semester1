@@ -15,7 +15,7 @@ int main()
 
 void invokeFunctionNTimes(void (*func)(unsigned), unsigned n)
 {
-    for (unsigned i = n - 1; i < n; --i) {
+    for (unsigned i = n; i-- > 0;) {
         func(i);
     }
 }

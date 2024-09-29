@@ -1,10 +1,11 @@
 #include <iostream>
 #include <vector>
+#include <string_view>
 
 int main()
 {
-    std::vector<std::string> cycleColors{"Green", "Red", "Yellow", "White", "Black"};
-    std::vector<std::string> subcycleAnimals
+    std::vector<std::string_view> cycleColors{"Green", "Red", "Yellow", "White", "Black"};
+    std::vector<std::string_view> subcycleAnimals
         {"Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig"};
 
     unsigned year;
@@ -25,8 +26,8 @@ int main()
     // Calculate the color index (each color lasts for 2 years, hence divide by 2)
     unsigned cycleColorIndex = (yearOffset % COLOR_CYCLE_LENGTH) / 2;
 
-    const std::string &yearColor = cycleColors[cycleColorIndex];
-    const std::string &yearAnimal = subcycleAnimals[yearAnimalIndex];
+    std::string_view yearColor = cycleColors[cycleColorIndex];
+    std::string_view yearAnimal = subcycleAnimals[yearAnimalIndex];
 
     std::cout << year << " is " << yearColor << ' ' << yearAnimal << " year." << std::endl;
 

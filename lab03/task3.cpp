@@ -19,7 +19,7 @@ bool isValidCardNumber(std::string_view cardNumber)
     int sum1 = 0; // Sum of products' digits that were multiplied by 2
     int sum2 = 0; // Sum of digits that weren't multiplied by 2
     int i = 0;
-    for (const char &c: cardNumber) {
+    for (char c: cardNumber) {
         if (i % 2 == 0) {
             int doubledDigit = (c - '0') * 2;
             while (doubledDigit) {
