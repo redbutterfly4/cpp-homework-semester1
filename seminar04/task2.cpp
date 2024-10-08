@@ -1,6 +1,6 @@
 #include <iostream>
 #include <algorithm>
-
+#include <vector>
 
 void removeZeros(std::vector<int> &);
 
